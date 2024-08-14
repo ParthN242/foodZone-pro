@@ -14,7 +14,7 @@ const app = express();
 dotenv.config();
 app.use(
   cors({
-    origin: true,
+    origin: ["https://food-zone-pro-fih9.vercel.app/"],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
     preflightContinue: true,
     optionsSuccessStatus: 204,
